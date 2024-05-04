@@ -29,7 +29,7 @@ This command removes all components related to `ask` that were installed by Home
 
 #### Further Information
 
-For detailed usage instructions, configuration options, and more information about `ask`, please visit the GitHub repository:
+For detailed usage instructions and more information about `ask`, please visit the GitHub repository:
 [Ask Repository](https://github.com/fluxtah/ask)
 
 #### Feedback and Contributions

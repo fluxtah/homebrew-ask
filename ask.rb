@@ -1,8 +1,8 @@
 class Ask < Formula
-  desc "A powerful command line tool for your needs"
+  desc "A tool to access OpenAI assistants on the command line with easy way to define and interact with assistants."
   homepage "https://github.com/fluxtah/ask"
-  url "file:///Users/ian.warwick/Documents/sdev/assistant-kommander/build/dist/ask-0.1.tar.gz"
-  sha256 "95b87cc17b28e880f3fdad2f68d0b1b991cf78e9adf829baa50fcd432ef09f17"
+  url "https://github.com/fluxtah/ask/releases/download/v0.1/v0.1.tar.gz"
+  sha256 "f2d71a85782f019bae3807c45bd2913230dede794bcde5755e060ab8f49c6f8d"
 
   def install
     # Install the JAR file to the 'lib' directory
