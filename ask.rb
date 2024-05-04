@@ -6,13 +6,13 @@ class Ask < Formula
 
   def install
     # Install the JAR file to the 'lib' directory
-    lib.install "ask-0.1.jar"
+    lib.install "ask-0.11.jar"
 
     # Install the script to the 'bin' directory
     bin.install "ask.sh" => "ask"
 
     # Modify the script to call the JAR from the correct location
-    inreplace bin/"ask", /^java -jar/, "java -jar #{lib}/ask-0.1.jar"
+    inreplace bin/"ask", /^java -jar/, "java -jar #{lib}/ask-0.11.jar"
   end
 
   test do
