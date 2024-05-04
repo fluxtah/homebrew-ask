@@ -37,10 +37,6 @@ For detailed usage instructions, configuration options, and more information abo
 Feedback and contributions are always welcome. Please submit any bugs, questions, or feature requests to the GitHub issue tracker:
 [Submit Issue](https://github.com/fluxtah/ask/issues)
 
-This streamlined README ensures users have the necessary instructions to install `ask` via Homebrew, while directing them to the repository for all other inquiries and detailed usage guidelines.
-
-Here's a concise section for your README that outlines the approach to testing Homebrew formula changes, suitable for inclusion in your repository documentation. This section will help you and any future contributors remember the steps for thorough testing of new releases.
-
 ## Development & Testing
 Follow these steps to ensure the formula works correctly before release:
 
