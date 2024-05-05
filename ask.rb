@@ -15,7 +15,7 @@ class Ask < Formula
     bin.install "ask.sh" => "ask"
 
     # Modify the script to call the JAR from the correct location
-    inreplace bin/"ask", /^java -jar.*$/, "java -jar #{lib}/#{jar_name}"
+    inreplace bin/"ask", /^java -jar.*$/, "java -jar #{lib}/#{jar_name} \"$@\""
   end
 
   test do
