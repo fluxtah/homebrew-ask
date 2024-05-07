@@ -1,9 +1,9 @@
 class Ask < Formula
   desc "A tool to access OpenAI assistants on the command line with easy way to define and interact with assistants."
   homepage "https://github.com/fluxtah/ask"
-  version "0.3.0"
+  version "0.4.0"
   url "https://github.com/fluxtah/ask/releases/download/v#{version}/ask-#{version}.tar.gz"
-  sha256 "a1eef03185e4b9ab240dbb9c71c4a3ad2c68f6e8c7aa45c9f40036dd73a06adc"
+  sha256 "b19c4d3e69a6e9139406015d656b7230c4faf19552e8eacc3395e271f8236d2b"
 
   def install
     jar_name = "ask-#{version}.jar"
