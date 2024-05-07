@@ -43,7 +43,7 @@ Follow these steps to ensure the formula works correctly before release:
 ### 1. Modify the Formula
 Change the `url` in the formula to a local `file://` URL for testing purposes:
 ```ruby
-url "file:///absolute/path/to/your/ask-1.0.tar.gz"
+url "file:///absolute/path/to/your/ask-0.3.0.tar.gz"
 ```
 
 ### 2. Install Locally

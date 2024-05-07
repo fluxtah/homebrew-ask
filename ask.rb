@@ -1,9 +1,9 @@
 class Ask < Formula
   desc "A tool to access OpenAI assistants on the command line with easy way to define and interact with assistants."
   homepage "https://github.com/fluxtah/ask"
-  version "0.2.0"
+  version "0.3.0"
   url "https://github.com/fluxtah/ask/releases/download/v#{version}/ask-#{version}.tar.gz"
-  sha256 "3100a12bc0641474b37af23da3a14741d9ac4059a640a4d86343b6bea5ee8103"
+  sha256 "/Users/ian.warwick/Documents/sdev/assistant-kommander/plugins"
 
   def install
     jar_name = "ask-#{version}.jar"
@@ -15,7 +15,7 @@ class Ask < Formula
     bin.install "ask.sh" => "ask"
 
     # Modify the script to call the JAR from the correct location
-    inreplace bin/"ask", /^java -jar.*$/, "java -jar #{lib}/#{jar_name} \"$@\""
+    inreplace bin/"ask", "PATH_TO_JAR", "#{lib}/#{jar_name}"
   end
 
   test do
