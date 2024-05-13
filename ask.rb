@@ -21,7 +21,8 @@ class Ask < Formula
     (Pathname.new("#{ENV["HOME"]}/.ask")).mkpath
 
     # Extract and copy the plugins folder to the .ask directory
-    system "tar", "-xzf", "ask-#{version}.tar.gz", "plugins", "-C", "#{ENV["HOME"]}/.ask"
+    tar_path = "#{buildpath}/ask-#{version}.tar.gz"
+    system "tar", "-xzf", tar_path, "plugins", "-C", ask_directory
   end
 
   test do
