@@ -16,14 +16,6 @@ class Ask < Formula
 
     # Modify the script to call the JAR from the correct location
     inreplace bin/"ask", "PATH_TO_JAR", "#{lib}/#{jar_name}"
-
-    # Create the .ask directory in the user's home directory
-    ask_directory = "#{ENV["HOME"]}/.ask"
-    (Pathname.new("#{ENV["HOME"]}/.ask")).mkpath
-
-    # Extract and copy the plugins folder to the .ask directory
-    tar_path = "#{buildpath}/ask-#{version}.tar.gz"
-    system "tar", "-xzf", tar_path, "plugins", "-C", ask_directory
   end
 
   test do
