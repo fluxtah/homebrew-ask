@@ -18,6 +18,7 @@ class Ask < Formula
     inreplace bin/"ask", "PATH_TO_JAR", "#{lib}/#{jar_name}"
 
     # Create the .ask directory in the user's home directory
+    ask_directory = "#{ENV["HOME"]}/.ask"
     (Pathname.new("#{ENV["HOME"]}/.ask")).mkpath
 
     # Extract and copy the plugins folder to the .ask directory
