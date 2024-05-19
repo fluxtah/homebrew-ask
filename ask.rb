@@ -5,6 +5,8 @@ class Ask < Formula
   url "https://github.com/fluxtah/ask/releases/download/v#{version}/ask-#{version}.tar.gz"
   sha256 "0615c9725eb8ddb55b6e668cbc57e52126b823f28a7c0dc88d773efd64873edc"
 
+  depends_on "openjdk"
+
   def install
     jar_name = "ask-#{version}.jar"
 
@@ -18,8 +20,14 @@ class Ask < Formula
     inreplace bin/"ask", "PATH_TO_JAR", "#{lib}/#{jar_name}"
   end
 
+  def caveats
+    <<~EOS
+      'ask' requires Java to be installed. Ensure JAVA_HOME is set:
+      export JAVA_HOME="$(/usr/libexec/java_home)"
+    EOS
+  end
+
   test do
-    # Use a simple command that your application can process and return a predictable result
-    assert_match "Expected output", shell_output("#{bin}/ask --version")
+    assert_match "Ask Version: #{version}", shell_output("#{bin}/ask -v")
   end
 end
