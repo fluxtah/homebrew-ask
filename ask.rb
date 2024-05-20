@@ -5,8 +5,6 @@ class Ask < Formula
   url "https://github.com/fluxtah/ask/releases/download/v#{version}/ask-#{version}.tar.gz"
   sha256 "fe182157ef5e104ea343912639efa3e043904f55c0d008bd566dec2c0381bd6f"
 
-  depends_on "openjdk"
-
   def install
     jar_name = "ask-#{version}.jar"
 
