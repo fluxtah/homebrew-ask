@@ -3,7 +3,7 @@ class Ask < Formula
   homepage "https://github.com/fluxtah/ask"
   version "0.7.8"
   url "https://github.com/fluxtah/ask/releases/download/v#{version}/ask-#{version}.tar.gz"
-  sha256 "26142721bfbbd86dbb686ac642fb35b912212eb51be365a366ffdbc7bd88f295"
+  sha256 "f434683b817b82980676736d377eda535813f09d48a195ba5de3b1c8efe9e5d2"
 
   def install
     jar_name = "ask-#{version}.jar"
